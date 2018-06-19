@@ -223,5 +223,38 @@ public static void main(String[] args)
 }
 }
 
+method 8 : using iterator in main method and java collection
+package method;
+
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+	System.out.println("enter size");
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		LinkedList<Integer> ar= new LinkedList();
+	for (int i=0; i<a; i++)
+		{
+			
+			ar.add(scn.nextInt());
+			
+		}
+		System.out.println(ar);
+		Iterator it=ar.iterator();
+		while (it.hasNext())
+		{
+			Object xx = it.next();
+		}
+		System.out.println();
+}
+
+}
 
 
