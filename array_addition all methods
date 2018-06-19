@@ -1,0 +1,200 @@
+//method1 : using main class:
+package method;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		int[] arr= new int[a];
+		
+		for (int i=0; i<arr.length; i++)
+		{
+			arr[i]=scn.nextInt();
+			
+		}
+		int sum=0;
+		for (int i=0; i<arr.length; i++)
+		{
+			
+			sum= sum+arr[i];
+		}
+		System.out.println(sum);
+	
+}
+
+//method 2: using method+ for loop
+package method;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		int[] arr= new int[a];
+		
+		for (int i=0; i<arr.length; i++)
+		{
+			arr[i]=scn.nextInt();
+			
+		}
+		
+		System.out.println(Rough2.summ(arr));
+	}
+	
+	
+	public static int summ(int[] arr)
+	{
+		int sum=0;
+		for(int i=0; i<arr.length; i++)
+		{
+			sum+=arr[i];
+		}
+		return sum;
+	}
+}
+
+//method 3 : method +using enhanced for loop
+package method;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		int[] arr= new int[a];
+		
+		for (int i=0; i<arr.length; i++)
+		{
+			arr[i]=scn.nextInt();
+			
+		}
+		
+		System.out.println(Rough2.summ(arr));
+	}
+	
+	
+	public static int summ(int[] arr)
+	{
+		int add=0;
+		for(int temp: arr)
+		{
+			add+=temp;
+		}
+		return add;
+	}
+}
+
+// method 4: using method+while loop
+package method;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		int[] arr= new int[a];
+		
+		for (int i=0; i<arr.length; i++)
+		{
+			arr[i]=scn.nextInt();
+			
+		}
+		
+		System.out.println(addition.summ(arr, a));
+		
+	}
+	
+	
+}
+final class addition
+{
+	public static int summ(int[] arr, int size)
+	{
+		size = arr.length;
+		int m=1;
+		int a= arr[0];
+		while (size>m)
+		{
+		a= a+ arr[m];
+		m=m+1;
+		}
+		return a;
+	}
+}
+	
+// method 5: using collection(ArrayList) in java;
+package method;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+	System.out.println("enter size");
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		ArrayList<Integer> ar= new ArrayList();
+	for (int i=0; i<a; i++)
+		{
+			
+			ar.add(scn.nextInt());
+			
+		}
+		System.out.println(ar);
+		int sum=0;
+		for (int temp : ar)
+		{
+			sum=sum+temp;
+		}
+		System.out.println("sum of the array is : "+sum);
+}
+
+}
+
+method 6: using ArrayList of java collection;
+package method;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Rough2
+{
+public static void main(String[] args)
+	{
+	System.out.println("enter size");
+		Scanner scn= new Scanner(System.in);
+		int a = scn.nextInt();
+		
+		LinkedList<Integer> ar= new LinkedList();
+	for (int i=0; i<a; i++)
+		{
+			
+			ar.add(scn.nextInt());
+			
+		}
+		System.out.println(ar);
+		int sum=0;
+		for (int temp : ar)
+		{
+			sum=sum+temp;
+		}
+		System.out.println("sum of the array is : "+sum);
+}
+
+}
+
