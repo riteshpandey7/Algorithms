@@ -248,13 +248,12 @@ public static void main(String[] args)
 		}
 		System.out.println(ar);
 		Iterator it=ar.iterator();
+		System.out.println("Elements are ");
 		while (it.hasNext())
 		{
 			Object xx = it.next();
+			System.out.print(" "+xx);
 		}
-		System.out.println();
+		
 }
-
-}
-
 
